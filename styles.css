@@ -1,57 +1,41 @@
-* {
-  box-sizing: border-box;
+/* Basic reset */
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height: 1.6; margin: 0; color: #222; }
+img { max-width: 100%; height: auto; display: block; }
+
+.site-header { background: #f7f7f8; padding: 1rem 0 0; border-bottom: 1px solid #e1e1e6; }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+.site-header h1 { margin: 0 0 .25rem; font-size: 1.8rem; }
+.subtitle { margin: 0 0 1rem; color: #555; }
+.hero { width: 100%; height: auto; border-radius: 4px; overflow: hidden; }
+
+.container { max-width: 1100px; margin: 1.25rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start; }
+
+.content { min-width: 0; }
+.content h2 { margin-top: 0; }
+.content figure { margin: 1rem 0; }
+.content figure figcaption { font-size: .9rem; color: #666; margin-top: .4rem; }
+.content p { margin: .75rem 0; }
+.float-right { float: right; margin-left: 1rem; width: 240px; }
+
+.sidebar { background: #fcfcfe; padding: 1rem; border-left: 1px solid #eee; border-radius: 6px; }
+.sidebar h3, .sidebar h4 { margin-top: 0; }
+.sidebar .note { background: #fff; padding: .75rem; border: 1px solid #eee; border-radius: 4px; margin-bottom: 1rem; }
+.sidebar .links ul { padding-left: 1.1rem; margin: .25rem 0; }
+.sidebar .thumb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+.sidebar .thumb-grid img { width: 100%; border-radius: 4px; }
+.sidebar .meta p { margin: .4rem 0; color: #444; }
+
+.site-footer { max-width: 1100px; margin: 2rem auto; padding: 0 1rem 2rem; color: #666; }
+
+/* Responsive adjustments */
+@media (max-width: 880px) {
+  .container { grid-template-columns: 1fr; }
+  .float-right { float: none; width: 100%; margin: 0 0 1rem 0; }
+  .sidebar { order: 2; }
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f2f6fb;
-  color: #1f2937;
-}
-
-.card {
-  max-width: 760px;
-  margin: 48px auto;
-  padding: 32px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 2.4rem;
-}
-
-p {
-  line-height: 1.6;
-}
-
-img {
-  width: 100%;
-  max-width: 560px;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  margin: 24px auto;
-}
-
-button {
-  padding: 12px 18px;
-  border: none;
-  border-radius: 999px;
-  background: #2563eb;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1d4ed8;
-}
-
-.message {
-  margin-top: 16px;
-  font-weight: bold;
+/* Make sidebar sticky on wide screens */
+@media (min-width: 881px) {
+  .sidebar { position: sticky; top: 1rem; height: calc(100vh - 2rem); overflow: auto; }
 }
