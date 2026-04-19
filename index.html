@@ -3,21 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello World</title>
-  <meta name="description" content="A simple GitHub Pages personal website example.">
+  <title>Long Article Layout with Sidebar Notes</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="card">
-    <h1>Hello world</h1>
-    <p>This is my first public website hosted on GitHub Pages.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Exploring Visual Storytelling</h1>
+      <p class="subtitle">A long-form article layout with images and a notes sidebar</p>
+      <img class="hero" src="https://via.placeholder.com/1200x300?text=Header+Image" alt="Header image">
+    </div>
+  </header>
 
-    <img src="images/hello.jpg" alt="Simple sample image for a GitHub Pages hello world site">
+  <main class="container">
+    <article class="content" aria-labelledby="article-title">
+      <h2 id="article-title">The Art of Framing Moments</h2>
+      <p>This article demonstrates a two-column layout: a main column for the long-form content and a narrow right column for notes, links, and small photos. The layout adapts to smaller screens by stacking the sidebar below the article.</p>
 
-    <button id="helloButton">Click me</button>
-    <p id="message" class="message"></p>
+      <figure>
+        <img src="https://via.placeholder.com/800x400?text=Article+Image+1" alt="Wide article photo">
+        <figcaption>Figure 1 — A wide image that complements the opening section.</figcaption>
+      </figure>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+
+      <h3>Section: Composition</h3>
+      <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
+
+      <figure class="float-right">
+        <img src="https://via.placeholder.com/240x160?text=Inset+Photo" alt="Inset photo">
+        <figcaption>Inset photo with text wrap.</figcaption>
+      </figure>
+
+      <p>In the above example, an inset photo is floated to the right so text wraps naturally. This is commonly used in magazine layouts to keep visual interest. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+
+      <h3>Section: Color and Light</h3>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <figure>
+        <img src="https://via.placeholder.com/800x400?text=Article+Image+2" alt="Second wide photo">
+        <figcaption>Figure 2 — A second wide image further into the article.</figcaption>
+      </figure>
+
+      <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+      <p>End of sample content. Continue adding sections, images, and captions as needed for your full article.</p>
+    </article>
+
+    <aside class="sidebar" aria-labelledby="notes-title">
+      <h3 id="notes-title">Notes & Quick Links</h3>
+      <div class="note">
+        <strong>Key takeaway:</strong>
+        <p>Use a narrow sidebar for citations, related links, and small thumbnails.</p>
+      </div>
+
+      <div class="links">
+        <h4>Related</h4>
+        <ul>
+          <li><a href="#">Composition Guide</a></li>
+          <li><a href="#">Color Theory</a></li>
+          <li><a href="#">Photography Tips</a></li>
+        </ul>
+      </div>
+
+      <div class="thumbs">
+        <h4>Small Photos</h4>
+        <div class="thumb-grid">
+          <img src="https://via.placeholder.com/100?text=1" alt="thumb 1">
+          <img src="https://via.placeholder.com/100?text=2" alt="thumb 2">
+          <img src="https://via.placeholder.com/100?text=3" alt="thumb 3">
+          <img src="https://via.placeholder.com/100?text=4" alt="thumb 4">
+        </div>
+      </div>
+
+      <div class="meta">
+        <p><strong>Author:</strong> Jane Doe</p>
+        <p><strong>Published:</strong> April 2026</p>
+      </div>
+    </aside>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>&copy; 2026 Visual Stories — Demo layout</p>
+  </footer>
 </body>
 </html>
