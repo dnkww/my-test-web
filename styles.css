@@ -9,7 +9,7 @@ img { max-width: 100%; height: auto; display: block; }
 .subtitle { margin: 0 0 1rem; color: #555; }
 .hero { width: 100%; height: auto; border-radius: 0; overflow: hidden; }
 
-.container { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 0; align-items: start; }
+.container { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 80%) minmax(0, 20%); gap: 0; align-items: start; }
 
 .content { min-width: 0; background: #fff9c4; padding: 1rem; border: 1px solid #000; border-radius: 0; }
 .content h2 { margin-top: 0; }
