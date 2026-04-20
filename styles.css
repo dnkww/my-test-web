@@ -18,9 +18,9 @@ img { max-width: 100%; height: auto; display: block; }
 .content p { margin: .75rem 0; }
 .float-right { float: right; margin-left: 1rem; width: 240px; }
 
-.sidebar { width: 100px; min-width: 100px; max-width: 100px; background: turquoise; padding: 1rem; border: 1px solid #000; border-radius: 0; }
+.sidebar { width: 100px; min-width: 100px; max-width: 100px; background: tan; padding: 1rem; border: 1px solid #000; border-radius: 0; }
 .sidebar h3, .sidebar h4 { margin-top: 0; }
-.sidebar .note { background: turquoise; padding: .75rem; border: 1px solid #eee; border-radius: 4px; margin-bottom: 1rem; }
+.sidebar .note { background: tan; padding: .75rem; border: 1px solid #eee; border-radius: 4px; margin-bottom: 1rem; }
 .sidebar .links ul { padding-left: 1.1rem; margin: .25rem 0; }
 .sidebar .thumb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
 .sidebar .thumb-grid img { width: 100%; border-radius: 4px; }
