@@ -3,88 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Long Article Layout with Sidebar Notes</title>
+  <title>Article List Layout</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1>Exploring Visual Storytelling 6</h1>
-      <p class="subtitle">A long-form article layout with images and a notes sidebar</p>
-      <img class="hero" src="https://via.placeholder.com/1200x300?text=Header+Image" alt="Header image">
-    </div>
+  <header class="banner">
+    <h1>DnK in the WW</h1>
+    <p class="banner-summary">Goings on and things of interest out in the woods.</p>
   </header>
 
-  <main class="container">
-    <article class="content" aria-labelledby="article-title">
-      <h2 id="article-title">The Art of Framing Moments</h2>
-      <p>This article demonstrates a two-column layout: a main column for the long-form content and a narrow right column for notes, links, and small photos. The layout adapts to smaller screens by stacking the sidebar below the article.</p>
-
-      <figure>
-        <img src="https://via.placeholder.com/800x400?text=Article+Image+1" alt="Wide article photo">
-        <figcaption>Figure 1 — A wide image that complements the opening section.</figcaption>
-      </figure>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
-
-      <h3>Section: Composition</h3>
-      <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
-
-      <figure class="float-right">
-        <img src="https://via.placeholder.com/240x160?text=Inset+Photo" alt="Inset photo">
-        <figcaption>Inset photo with text wrap.</figcaption>
-      </figure>
-
-      <p>In the above example, an inset photo is floated to the right so text wraps naturally. This is commonly used in magazine layouts to keep visual interest. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-
-      <h3>Section: Color and Light</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-      <figure>
-        <img src="https://via.placeholder.com/800x400?text=Article+Image+2" alt="Second wide photo">
-        <figcaption>Figure 2 — A second wide image further into the article.</figcaption>
-      </figure>
-
-      <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-
-      <p>End of sample content. Continue adding sections, images, and captions as needed for your full article.</p>
-    </article>
-
-    <aside class="sidebar" aria-labelledby="notes-title">
-      <h3 id="notes-title">Notes & Quick Links</h3>
-      <div class="note">
-        <strong>Key takeaway:</strong>
-        <p>Use a narrow sidebar for citations, related links, and small thumbnails.</p>
-      </div>
-
-      <div class="links">
-        <h4>Related</h4>
-        <ul>
-          <li><a href="#">Composition Guide</a></li>
-          <li><a href="#">Color Theory</a></li>
-          <li><a href="#">Photography Tips</a></li>
-        </ul>
-      </div>
-
-      <div class="thumbs">
-        <h4>Small Photos</h4>
-        <div class="thumb-grid">
-          <img src="https://via.placeholder.com/100?text=1" alt="thumb 1">
-          <img src="https://via.placeholder.com/100?text=2" alt="thumb 2">
-          <img src="https://via.placeholder.com/100?text=3" alt="thumb 3">
-          <img src="https://via.placeholder.com/100?text=4" alt="thumb 4">
+  <div class="page-layout">
+    <main class="news-feed" aria-label="Latest stories">
+      <article class="story">
+        <time datetime="2026-04-24" class="story-date">April 24, 2026</time>
+        <div class="story-copy">
+          <h2>Driving Less Now?</h2>
+          <p class="dek">Driving to Duvall for cheaper gas but mabe the cost of gas to get there was more than the savings? $4.98/gal.</p>
         </div>
-      </div>
+        <img class="story-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ford%20Ranger%20XLT%20USDM.jpg" alt="Older Ford Ranger pickup">
+      </article>
 
-      <div class="meta">
-        <p><strong>Author:</strong> Jane Doe</p>
-        <p><strong>Published:</strong> April 2026</p>
-      </div>
+      <article class="story">
+        <time datetime="2026-04-21" class="story-date">April 21, 2026</time>
+        <div class="story-copy">
+          <h2>Crossing the Divide</h2>
+          <p class="dek">What one image tells us about the road back to a changed community.</p>
+        </div>
+        <img class="story-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=320&q=80" alt="People walking through a rocky landscape">
+      </article>
+
+      <article class="story">
+        <time datetime="2026-04-21" class="story-date">April 21, 2026</time>
+        <div class="story-copy">
+          <h2>U.S. Military Stops Tanker Carrying Iranian Oil, Pentagon Says</h2>
+          <p class="dek">The seizure was the latest U.S. effort to squeeze an oil-reliant economy, and came days after a naval boarding near a narrow shipping lane.</p>
+        </div>
+        <img class="story-image" src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=320&q=80" alt="Cargo ship moving through open water">
+      </article>
+
+      <article class="story">
+        <time datetime="2026-04-21" class="story-date">April 21, 2026</time>
+        <div class="story-copy">
+          <h2>Europe Wanted a Say on the Iran War, but It's Still on the Sidelines</h2>
+          <p class="dek">A diplomatic plan would give the continent a role. But the capitals with the most leverage are still calling the shots.</p>
+        </div>
+        <img class="story-image" src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=320&q=80" alt="Officials gathered near flags">
+      </article>
+    </main>
+
+    <aside class="side-column" aria-label="Side column">
+      <h2>Our Site</h2>
+      <p>Photos and updates of what&apos;s happening here</p>
+      <p>Not diligent updating, just random fun stuff.</p>
+      <p>Contact us at youknowwhere@our.com</p>
     </aside>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Visual Stories — Demo layout</p>
-  </footer>
+  </div>
 </body>
 </html>

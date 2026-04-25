@@ -1,41 +1,200 @@
-/* Basic reset */
-* { box-sizing: border-box; }
-body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height: 1.6; margin: 0; color: #222; background: #fff; }
-img { max-width: 100%; height: auto; display: block; }
-
-.site-header { padding: 0; }
-.header-inner { width: 100%; margin: 0; padding: 0 21px 1rem 26px; background: cyan; border: 1px solid #000; border-radius: 12px; }
-.site-header h1 { margin: 0 0 .25rem; font-size: 1.8rem; }
-.subtitle { margin: 0 0 1rem; color: #555; }
-.hero { width: 100%; height: auto; border-radius: 0; overflow: hidden; }
-
-.container { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 0; align-items: start; }
-
-.content { min-width: 0; background: #fff9c4; padding: 1rem 1rem 1rem 26px; border: 1px solid #000; border-radius: 0; }
-.content h2 { margin-top: 0; }
-.content figure { margin: 1rem 0; }
-.content figure figcaption { font-size: .9rem; color: #666; margin-top: .4rem; }
-.content p { margin: .75rem 0; }
-.float-right { float: right; margin-left: 1rem; width: 240px; }
-
-.sidebar { width: 200px; min-width: 200px; max-width: 200px; background: tan; padding: 1rem; border: 1px solid #000; border-radius: 0; }
-.sidebar h3, .sidebar h4 { margin-top: 0; }
-.sidebar .note { background: tan; padding: .75rem; border: 1px solid #eee; border-radius: 4px; margin-bottom: 1rem; }
-.sidebar .links ul { padding-left: 1.1rem; margin: .25rem 0; }
-.sidebar .thumb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
-.sidebar .thumb-grid img { width: 100%; border-radius: 4px; }
-.sidebar .meta p { margin: .4rem 0; color: #444; }
-
-.site-footer { max-width: 1100px; margin: 2rem auto; padding: 0 1rem 2rem; color: #666; }
-
-/* Responsive adjustments */
-@media (max-width: 880px) {
-  .container { grid-template-columns: 1fr; }
-  .float-right { float: none; width: 100%; margin: 0 0 1rem 0; }
-  .sidebar { order: 2; }
+* {
+  box-sizing: border-box;
 }
 
-/* Make sidebar sticky on wide screens */
-@media (min-width: 881px) {
-  .sidebar { position: sticky; top: 1rem; height: calc(100vh - 2rem); overflow: auto; }
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #050505;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.banner {
+  width: 100%;
+  padding: 22px 24px 24px;
+  border-bottom: 1px solid #d9d9d9;
+  background: #f5f5f2;
+}
+
+.banner-kicker,
+.banner-summary {
+  margin: 0;
+  color: #555f67;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.banner h1 {
+  margin: 4px 0 6px;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 840px) 200px;
+  gap: 24px;
+  align-items: start;
+  width: min(100% - 48px, 1088px);
+  margin: 18px 0 18px 24px;
+}
+
+.news-feed {
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) 160px;
+  column-gap: 15px;
+  align-items: start;
+  min-height: 212px;
+  padding: 20px 0 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.story-date {
+  padding-top: 7px;
+  color: #5d6873;
+  font-size: 11px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.story-copy {
+  max-width: 520px;
+}
+
+.story h1,
+.story h2 {
+  margin: 0;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+
+.story h1 {
+  font-size: 23px;
+}
+
+.story h2 {
+  font-size: 27px;
+}
+
+.dek {
+  margin: 8px 0 14px;
+  color: #0f0f0f;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15.5px;
+  line-height: 1.36;
+}
+
+.story-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.side-column {
+  width: 200px;
+  padding-top: 14px;
+  border-top: 1px solid #d9d9d9;
+  color: #202020;
+}
+
+.side-column h2 {
+  margin: 0 0 12px;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.side-column p {
+  margin: 0;
+  padding: 12px 0;
+  border-top: 1px solid #e3e3e3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+@media (max-width: 720px) {
+  .banner {
+    padding: 18px 14px;
+  }
+
+  .banner h1 {
+    font-size: 29px;
+  }
+
+  .page-layout {
+    grid-template-columns: 1fr;
+    width: min(100% - 28px, 560px);
+    margin: 12px 0 18px 14px;
+  }
+
+  .news-feed {
+    width: 100%;
+  }
+
+  .story {
+    grid-template-columns: minmax(0, 1fr) 112px;
+    gap: 10px 16px;
+    min-height: 0;
+    padding: 18px 0 22px;
+  }
+
+  .story-date {
+    grid-column: 1 / -1;
+    padding-top: 0;
+  }
+
+  .story h1,
+  .story h2 {
+    font-size: 23px;
+    line-height: 1.08;
+  }
+
+  .dek {
+    font-size: 14px;
+  }
+
+  .story-image {
+    width: 112px;
+    height: 112px;
+  }
+
+  .side-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .story-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
 }
