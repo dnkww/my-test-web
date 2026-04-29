@@ -59,11 +59,11 @@ img {
 
 .story {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr) 96px;
+  grid-template-columns: 76px minmax(0, 1fr) 64px;
   column-gap: 15px;
   align-items: start;
   min-height: 0;
-  padding: 10px 0 6px;
+  padding: 10px 0 1em;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -106,8 +106,8 @@ img {
 }
 
 .story-image {
-  width: 96px;
-  height: 96px;
+  width: 64px;
+  height: 64px;
   object-fit: cover;
 }
 
@@ -178,10 +178,10 @@ img {
   }
 
   .story {
-    grid-template-columns: minmax(0, 1fr) 88px;
+    grid-template-columns: minmax(0, 1fr) 64px;
     gap: 10px 16px;
     min-height: 0;
-    padding: 10px 0 6px;
+    padding: 10px 0 1em;
   }
 
   .story-text-only {
@@ -204,8 +204,8 @@ img {
   }
 
   .story-image {
-    width: 88px;
-    height: 88px;
+    width: 64px;
+    height: 64px;
   }
 
   .side-column {
