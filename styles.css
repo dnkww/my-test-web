@@ -59,11 +59,12 @@ img {
 
 .story {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr) 160px;
+  grid-template-columns: 76px minmax(0, 1fr) 96px;
   column-gap: 15px;
   align-items: start;
   min-height: 0;
-  padding: 16px 0 14px;
+  padding: 10px 0 6px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .story-date {
@@ -97,7 +98,7 @@ img {
 }
 
 .dek {
-  margin: 8px 0 14px;
+  margin: 6px 0 6px;
   color: #0f0f0f;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 15.5px;
@@ -105,8 +106,8 @@ img {
 }
 
 .story-image {
-  width: 160px;
-  height: 160px;
+  width: 96px;
+  height: 96px;
   object-fit: cover;
 }
 
@@ -177,10 +178,10 @@ img {
   }
 
   .story {
-    grid-template-columns: minmax(0, 1fr) 112px;
+    grid-template-columns: minmax(0, 1fr) 88px;
     gap: 10px 16px;
     min-height: 0;
-    padding: 14px 0 14px;
+    padding: 10px 0 6px;
   }
 
   .story-text-only {
@@ -203,8 +204,8 @@ img {
   }
 
   .story-image {
-    width: 112px;
-    height: 112px;
+    width: 88px;
+    height: 88px;
   }
 
   .side-column {
