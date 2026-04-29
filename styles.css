@@ -62,9 +62,8 @@ img {
   grid-template-columns: 76px minmax(0, 1fr) 160px;
   column-gap: 15px;
   align-items: start;
-  min-height: 212px;
-  padding: 20px 0 30px;
-  border-bottom: 1px solid #d9d9d9;
+  min-height: 0;
+  padding: 16px 0 14px;
 }
 
 .story-date {
@@ -181,7 +180,7 @@ img {
     grid-template-columns: minmax(0, 1fr) 112px;
     gap: 10px 16px;
     min-height: 0;
-    padding: 18px 0 22px;
+    padding: 14px 0 14px;
   }
 
   .story-text-only {
